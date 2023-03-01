@@ -32,11 +32,11 @@ const Home: NextPage = () => {
   useEffect(() => {
     return () => {
       if (roundedText.current) {
-        // eslint-disable-next-line @typescript-eslint/no-unsafe-call
+        // eslint-disable-next-line @typescript-eslint/no-unsafe-call,react-hooks/exhaustive-deps
         new CircleType(roundedText.current);
       }
     };
-  }, [roundedText.current]);
+  }, []);
 
   return (
     <>

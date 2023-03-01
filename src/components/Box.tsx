@@ -7,7 +7,6 @@ interface BoxProps {
 }
 
 export const Box = ({ backgroundColor = 'PRIMARY-800', shadow = true, children, className = "" }: React.PropsWithChildren<BoxProps>) => {
-    console.log(backgroundColor);
     const backgroundCss = "bg-" + backgroundColor.toLowerCase();
     const shadowCss = shadow ? "drop-shadow-2xl" : "";
 
